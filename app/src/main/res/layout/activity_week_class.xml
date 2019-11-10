@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home.Activitys.WeekClassActivity">
+
+    <include layout="@layout/nutc_user_header"/>
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:restoreNumberOfVisibleDays="true"
+        app:showFirstDayOfWeekFirst="true"
+        app:defaultEventColor="@color/colorPrimary"
+        app:eventTextColor="@color/Blank"
+        app:timeColumnTextSize="12sp"
+        app:hourHeight="60dp"
+        app:timeColumnPadding="8dp"
+        app:timeColumnTextColor="@color/Black"
+        app:timeColumnBackgroundColor="@color/CanvasBackground"
+        app:headerRowPadding="12dp"
+        app:columnGap="8dp"
+        app:numberOfVisibleDays="7"
+        app:headerRowBackgroundColor="@color/CanvasBackground"
+        app:dayBackgroundColor="@color/CanvasBackground"
+        app:todayBackgroundColor="@color/Blank" />
+</LinearLayout>

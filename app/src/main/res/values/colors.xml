@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976d3</color>
+    <color name="colorPrimaryDark">#166abd</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Blank">#fff</color>
+    <color name="Dark">#5f5f5f</color>
+    <color name="Black">#000</color>
+    <color name="CanvasBackground">#fbfbfc</color>
+    <color name="male">#5CB85C</color>
+    <color name="female">#d9534f</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="DarkGray">#777777</color>
+    <color name="Not_accept_color">#e2252b</color>
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+</resources>

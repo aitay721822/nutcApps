@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home.Fragments.userFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/CanvasBackground">
+
+        <!-- Header  -->
+        <include layout="@layout/nutc_user_header"/>
+
+        <!-- Content  -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@color/CanvasBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/Blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/userImage_card"
+                            android:scaleType="centerCrop"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp" />
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:gravity="start"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/stu_type"
+                                android:textAlignment="textStart"
+                                android:textSize="20sp"
+                                android:text="@string/student_type"
+                                android:textColor="@color/Black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:gravity="start"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/stu_sec_type"
+                                    android:layout_marginTop="1dp"
+                                    android:textAlignment="center"
+                                    android:textSize="10sp"
+                                    android:text="@string/stu_sec_type"
+                                    android:textColor="@color/DarkGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginTop="1dp"
+                                    android:textAlignment="center"
+                                    android:textSize="10sp"
+                                    android:text="@string/line"
+                                    android:textColor="@color/DarkGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:id="@+id/stu_class"
+                                    android:layout_marginTop="1dp"
+                                    android:textAlignment="center"
+                                    android:textSize="10sp"
+                                    android:text="@string/stu_class_name"
+                                    android:textColor="@color/DarkGray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:textColor="@color/Black"
+                    android:textSize="25dp"
+                    android:text="@string/stu_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/studentData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

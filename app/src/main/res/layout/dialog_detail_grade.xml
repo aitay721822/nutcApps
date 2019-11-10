@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/detail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/detail_absent_textview"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/classInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/classInfo"
+        app:layout_constraintEnd_toEndOf="@+id/barrier2"
+        app:layout_constraintEnd_toStartOf="@+id/classInfo_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_tv" />
+
+    <EditText
+        android:text="@string/template_class_name"
+        android:id="@+id/classInfo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/classInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/classInfo"
+        app:layout_constraintStart_toStartOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/classInfo" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="classInfo,classroom_desc,group_desc"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/classroom_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/classroom_desc"
+        app:layout_constraintEnd_toEndOf="@+id/barrier2"
+        app:layout_constraintEnd_toStartOf="@+id/classroom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classInfo" />
+
+    <EditText
+        android:text="@string/template_class"
+        android:focusable="false"
+        android:id="@+id/classroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@id/classroom_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/classroom_desc"
+        app:layout_constraintStart_toStartOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/classroom_desc" />
+
+    <TextView
+        android:id="@+id/group_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/group_desc"
+        app:layout_constraintEnd_toEndOf="@+id/barrier2"
+        app:layout_constraintEnd_toStartOf="@+id/group"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classroom_desc" />
+
+    <EditText
+        android:text="@string/template_group"
+        android:id="@+id/group"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="@id/group_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/group_desc"
+        app:layout_constraintStart_toStartOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/group_desc" />
+
+    <TextView
+        android:id="@+id/course_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/course_type"
+        app:layout_constraintEnd_toEndOf="@+id/barrier2"
+        app:layout_constraintEnd_toStartOf="@+id/group"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group_desc" />
+
+    <EditText
+        android:focusable="false"
+        android:text="@string/template_course_type"
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="@id/course_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/course_type"
+        app:layout_constraintStart_toStartOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/course_type" />
+
+
+    <TextView
+        android:id="@+id/credit_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/credit_desc"
+        app:layout_constraintEnd_toEndOf="@+id/barrier2"
+        app:layout_constraintEnd_toStartOf="@+id/credit_value"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_type" />
+
+    <EditText
+        android:text="@string/template_credit_value"
+        android:id="@+id/credit_value"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="@id/credit_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/credit_desc"
+        app:layout_constraintStart_toStartOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/credit_desc" />
+
+
+    <TextView
+        android:id="@+id/grade_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/grade_desc"
+        app:layout_constraintEnd_toEndOf="@+id/barrier2"
+        app:layout_constraintEnd_toStartOf="@+id/grade_value"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credit_desc" />
+
+    <EditText
+        android:text="@string/template_grade_value"
+        android:id="@+id/grade_value"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="@id/grade_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/grade_desc"
+        app:layout_constraintStart_toStartOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/grade_desc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/Blank"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/back"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/iv_back"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:ellipsize="end"
+        android:textColor="@color/Black"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:cardCornerRadius="250dp"
+        app:cardBackgroundColor="@color/Blank">
+        <ImageView
+            android:id="@+id/student_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

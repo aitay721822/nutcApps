@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/detail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/detail_absent_textview"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/classInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/classInfo"
+            app:layout_constraintEnd_toEndOf="@+id/barrier2"
+            app:layout_constraintEnd_toStartOf="@+id/classInfo_view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_tv" />
+
+        <EditText
+            android:text="@string/template_class_name"
+            android:id="@+id/classInfo_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/classInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/classInfo"
+            app:layout_constraintStart_toStartOf="@+id/barrier2"
+            app:layout_constraintTop_toTopOf="@+id/classInfo" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="classInfo,classroom_desc"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <TextView
+            android:id="@+id/classroom_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/classroom_desc"
+            app:layout_constraintEnd_toEndOf="@+id/barrier2"
+            app:layout_constraintEnd_toStartOf="@+id/classroom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classInfo" />
+
+        <EditText
+            android:text="@string/template_class"
+            android:focusable="false"
+            android:id="@+id/classroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="@id/classroom_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/classroom_desc"
+            app:layout_constraintStart_toStartOf="@+id/barrier2"
+            app:layout_constraintTop_toTopOf="@+id/classroom_desc" />
+
+
+        <TextView
+            android:id="@+id/teacher_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/teacher_desc"
+            app:layout_constraintEnd_toEndOf="@+id/barrier2"
+            app:layout_constraintEnd_toStartOf="@+id/teacher_value"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/classroom_desc" />
+
+        <EditText
+            android:text="@string/template_teacher"
+            android:id="@+id/teacher_value"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            app:layout_constraintBottom_toBottomOf="@id/teacher_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/teacher_desc"
+            app:layout_constraintStart_toStartOf="@+id/barrier2"
+            app:layout_constraintTop_toTopOf="@+id/teacher_desc" />
+
+        <TextView
+            android:id="@+id/absent_detail_template"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/absent_detail_template"
+            app:layout_constraintEnd_toEndOf="@+id/barrier2"
+            app:layout_constraintEnd_toStartOf="@id/absent_detail_value"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teacher_desc" />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/absent_detail_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:focusable="false"
+            android:text="@string/absent_detail_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/barrier2"
+            app:layout_constraintTop_toTopOf="@+id/absent_detail_template" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

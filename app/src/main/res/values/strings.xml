@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">中科大學生助手</string>
+    <string name="school_name">臺中科技大學</string>
+    <string name="passwordError">密碼錯誤嗎 ?</string>
+    <string name="loginBtn">登入</string>
+    <string name="validationCode">驗證碼 / Validation Code</string>
+    <string name="passwordHint">密碼 / Password</string>
+    <string name="passwordHintNoEng">密碼</string>
+    <string name="accountHint">學號 / School Number</string>
+    <string name="forgotPasswordTitle">忘記密碼</string>
+    <string name="accountHintNoEng">學號：</string>
+    <string name="idnumber">身分證字號：</string>
+    <string name="idnumberHint">請輸入身分證字號...</string>
+    <string name="question">問題選擇：</string>
+    <string name="answer">問題回答：</string>
+    <string name="answerHint">請輸入問題回答...</string>
+    <string name="InputaccountHint">請輸入學號...</string>
+    <string name="send">送出</string>
+    <string name="forgotPasswordDes">忘記密碼或是帳號被停用，請輸入以下資訊，密碼會重新寄送到常用Email</string>
+    <string name="changePasswordTitle">更改密碼</string>
+    <string name="changePasswordDes">密碼需包含英文及數字，長度至少為六個字元</string>
+    <string name="newPassword">新密碼：</string>
+    <string name="oldPassword">舊密碼</string>
+    <string name="InputNewPasswordHint">請輸入新密碼...</string>
+    <string name="newPasswordCheck">請確認新密碼：</string>
+    <string name="InputOldPasswordHint">請輸入舊密碼...</string>
+    <string name="needChangePass">需更改密碼!</string>
+    <string name="loginSuccessful">登入成功!</string>
+    <string name="loginError">登入失敗!</string>
+    <string name="sendError">送出失敗!</string>
+    <string-array name="QuestionList">
+        <item>您最喜歡的食物</item>
+        <item>您最喜歡的顏色</item>
+        <item>您最喜歡旅遊地點</item>
+        <item>What is your favorite food? (3-20 characters)</item>
+        <item>您最好朋友的生日</item>
+        <item>What is the name of your first elementary/primary school? (3-20 characters)</item>
+        <item>What was the name of your first pet? (3-20 characters)</item>
+        <item>您最愛的演藝人員</item>
+    </string-array>
+
+    <string-array name="AbsentTitle">
+        <item>曠課</item>
+        <item>遲到</item>
+        <item>早退</item>
+        <item>公假</item>
+        <item>事假</item>
+        <item>病假</item>
+        <item>喪假</item>
+        <item>生理假</item>
+        <item>婚假</item>
+        <item>產假</item>
+        <item>育嬰假</item>
+        <item>操行</item>
+
+    </string-array>
+
+    <string name="noInternetConnection">沒有網路連線或請求逾時</string>
+
+    <string name="NOT_LOG_IN">還沒有登入唷</string>
+    <string name="title_home">主頁面</string>
+    <string name="title_grades">成績</string>
+    <string name="title_present">出缺席</string>
+    <string name="title_user">學生</string>
+    <string name="IS_CHANGED_PASSWORD">已更改密碼!</string>
+    <string name="CHANGE_PASSWORD">變更密碼</string>
+    <string name="empty">空值</string>
+    <string name="IS_NOT_EQUAL">請輸入一樣的密碼!</string>
+    <string name="announcement">公告</string>
+    <string name="listAll">功能</string>
+    <string name="title_activity_home">主頁面</string>
+    <string name="ACTIVED_ERROR">啟用錯誤</string>
+    <string name="ACTIVED_SUCCESSFUL">啟用成功</string>
+    <string name="FETCH_IMAGE_ERROR">取得使用者照片失敗</string>
+    <string name="CANT_FETCH_NOTICE">無法獲取公告內容</string>
+    <string name="notice_template_title">公告108.4.24教務會議修正通過之英文能力畢業門檻及輔導標準辦法</string>
+    <string name="notice_template_student_type">職員,教師,學生</string>
+    <string name="notice_template_type_description">公告類型</string>
+    <string name="notice_template_entities">發布單位</string>
+    <string name="split">/</string>
+    <string name="notice_template_entities_desc">日間部</string>
+    <string name="colon">:</string>
+    <string name="IS_CANNOT_EQUAL">兩種密碼不可重複</string>
+    <string name="SeminarTitle">班級幹部</string>
+    <string name="classSeminar">班級幹部</string>
+    <string name="seminar_template_type">班代</string>
+    <string name="seminar_template_name">姓名</string>
+    <string name="seminar_template_gender">男</string>
+    <string name="FETCH_ERROR">解析失敗</string>
+    <string name="inputSearch">請輸入職位名稱、姓名或性別</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="classmateTitle">班級成員</string>
+    <string name="searchClassmates">輸入學號、名子或是性別</string>
+    <string name="hash">15</string>
+    <string name="WeekClassTitle">我的課表</string>
+
+    <string name="student_type">日間部</string>
+    <string name="class_type">四技 / 資工二一</string>
+    <string name="user_data_template">戶籍地址</string>
+    <string name="user_data_template_input">桃園市龍潭區高原里中原路3段153號</string>
+    <string name="PASSWORD_NOT_VALID">密碼格式不符合</string>
+    <string name="stu_sec_type">四技</string>
+    <string name="stu_class_name">資工二1</string>
+    <string name="line">/</string>
+    <string name="your_grade_information">您的成績狀況</string>
+    <string name="other_grade_information">學分與學期平均</string>
+    <string name="stu_detail">學生資訊</string>
+    <string name="result_credit">總修習學分</string>
+    <string name="result_credit_template">0</string>
+    <string name="not_accept_credit">不及格學分</string>
+    <string name="accept_credit">實得學分</string>
+    <string name="average">平均成績</string>
+    <string name="absentValue">操行</string>
+
+    <string name="Absent_Title">缺礦紀錄</string>
+    <string name="all_absent">曠課次數</string>
+    <string name="all_late">遲到次數</string>
+    <string name="all_early">早退次數</string>
+    <string name="Absent_count">請假紀錄</string>
+    <string name="absent_detail">詳細請假紀錄</string>
+    <string name="template_dayOff_desc">公假</string>
+    <string name="class_template_name">台日文化比較（一）</string>
+    <string name="classroom">日語二１</string>
+    <string name="teacher_name">上課教師</string>
+    <string name="teacher_name_template">洪國財</string>
+    <string name="detail_absent_textview">詳細資訊</string>
+    <string name="classInfo">課程名稱 : </string>
+    <string name="classroom_desc">開課班級 </string>
+    <string name="group_desc">分組 :</string>
+    <string name="template_group">4</string>
+    <string name="template_class">日語二1</string>
+    <string name="template_class_name">台日文化</string>
+    <string name="course_type">修別 :</string>
+    <string name="template_course_type">必</string>
+    <string name="credit_desc">學分 :</string>
+    <string name="template_credit_value">3</string>
+    <string name="grade_desc">成績 :</string>
+    <string name="template_grade_value">95</string>
+    <string name="template_teacher">張珈瑛</string>
+    <string name="teacher_desc">上課教師 : </string>
+    <string name="absent_detail_template">缺礦狀態 :</string>
+    <string name="absent_detail_value">第3週108/09/27(五)第2節曠課\n第3週108/09/27(五)第3節曠課\n第3週108/09/27(五)第4節曠課</string>
+    <string name="isEMPTY">目前尚無資料</string>
+
+</resources>
